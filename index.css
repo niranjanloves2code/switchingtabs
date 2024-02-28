@@ -1,0 +1,51 @@
+.tabs{
+    border:1px solid #cccccc;
+    display: flex;
+}
+
+.tabs-sidebar{
+    width: 125px;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    background: #cccccc;
+    /* height: 90vh; */
+
+}
+.tabs-btn{
+    display: block;
+    padding: 10px;
+    background: #dddddd;
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+.tabs-btn:active{
+    background: #dddddd
+}
+
+.tabs-btn:not(:last-of-type){
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabs-btn-active{
+    font-weight: bold;
+    border-right: 2px solid #7129e6;
+    background: #dddddd;
+}
+
+.tabs-content{
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+
+}
+
+.tabs-content-active{
+    display: block;
+}
+
+.tabs-content > :first-child{
+    margin-top: 0;
+}
